@@ -3,11 +3,11 @@
 
 ## 效果
 
-![image-20210324150201398](.README_asserts\image-20210324150201398.png)
+![image-20210324150201398](.README_asserts/image-20210324150201398.png)
 
 Batchsize为2，一次训练两张图片，切换不同的Environment来查看不同的图片情况
 
-![image-20210324150227968](.README_asserts\image-20210324150227968.png)
+![image-20210324150227968](.README_asserts/image-20210324150227968.png)
 
 可以在训练过程中查看特征图的情况
 
@@ -46,7 +46,7 @@ Batchsize为2，一次训练两张图片，切换不同的Environment来查看�
 self.visual_block = visual_block(max_row=10, max_column=10)
 ```
 
-![设置全局参数](.README_asserts\image-20210324145434085.png)![image-20210324145434132](.README_asserts\image-20210324145434132.png)
+![设置全局参数](.README_asserts/image-20210324145434085.png)![image-20210324145434132](.README_asserts/image-20210324145434132.png)
 
 ```python
 #在forward函数中，显示原图片
@@ -55,7 +55,7 @@ self.visual_block([x, {'mode': 'source_image', 'layer': 'source_image'}])
 self.visual_block([x, {'mode': 'feature_map', 'layer': 'conv_1', 'channel_num': 10}])
 ```
 
-![在forward函数中使用](.README_asserts\image-20210324145833051.png)
+![在forward函数中使用](.README_asserts/image-20210324145833051.png)
 
 
 
